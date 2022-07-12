@@ -12,6 +12,12 @@ public class Vehicle {
 		//constructor
 		
 		public Vehicle() {}
+		
+		/**
+	     * Constructor for Vehicle object
+	     * @param wheels, year, mileage, type
+	     * All values that are needed to create a Vehicle object
+	     */
 
 		public Vehicle(int wheels, int year, int mileage, String type) {
 			this.wheels = wheels;
@@ -56,6 +62,12 @@ public class Vehicle {
 		
 		//methods
 		
+		/**
+	     * A method that displays that the engine is running and increases the mileage on a Vehicle object
+	     * @return
+	     * Increases the mileage variable by 1 and returns it
+	     */
+		
 		public int run() {
 			
 			System.out.println("The engine is running.");
@@ -64,6 +76,12 @@ public class Vehicle {
 		}
 		
 		//toString
+		
+		/**
+	     * toString method
+	     * @return
+	     * Returns the Vehicle object's information as a String, following the template constructed below
+	     */
 
 		@Override
 		public String toString() {

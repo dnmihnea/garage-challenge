@@ -8,6 +8,12 @@ public class Car extends Vehicle {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
+	/**
+     * Constructor for Car object, extends Vehicle
+     * @param wheels, year, mileage, type, automatic
+     * All values from Vehicle and a new value that is exclusive to Car 
+     */
 
 	public Car(int wheels, int year, int mileage, String type, boolean automatic) {
 		super(wheels, year, mileage, type);
@@ -16,14 +22,31 @@ public class Car extends Vehicle {
 	}
 
 
+	/**
+     * Getter for a Car object's automatic variable
+     * @return
+     * Returns whether or not a Car object's automatic value is true or false
+     */
 
 	public boolean isAutomatic() {
 		return automatic;
 	}
+	
+	/**
+     * Setter for a Car object's automatic variable
+     * @param automatic
+     * The value of the automatic variable - true or false
+     */
 
 	public void setAutomatic(boolean automatic) {
 		this.automatic = automatic;
 	}
+	
+	/**
+     * toString method
+     * @return
+     * Returns the Car object's information as a String, following the template constructed below
+     */
 
 	@Override
 	public String toString() {
